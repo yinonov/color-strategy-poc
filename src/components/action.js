@@ -6,6 +6,8 @@ class ActionComponent extends HTMLElement {
 
         :host{
           display:block;
+          padding: 5px;
+          margin: 5px 0;
           background-color: var(--vvd-action-background-color);
           color: var(--vvd-action-color);
         }
@@ -49,8 +51,8 @@ class ActionComponent extends HTMLElement {
 
         /* force button to invert */
         :host([alternate]) ::slotted(my-button) {
-          --vvd-button-background-color: var(--vvd-action-color);
-          --vvd-button-color: var(--vvd-action-background-color);
+          --vvd-button-background-color: var(--vvd-color-base-foreground);
+          --vvd-button-color: var(--vvd-color-base-background);
         }
       </style>
       <slot></slot>
