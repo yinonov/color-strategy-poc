@@ -1,11 +1,19 @@
 /// for demo
 body{
   margin:0;
+  font-family: 'Quicksand', sans-serif;
 }
-
 
 .layout {
-display: grid;
-grid-template-columns: 250px auto;
+  display: grid;
+  grid-template-columns: 250px auto;
 }
 
+my-action{
+  // margin: 0 5%;
+  border-radius:4px;
+}
+
+my-context {
+  padding:5px;
+}

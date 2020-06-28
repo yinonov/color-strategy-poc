@@ -7,7 +7,9 @@ document.getElementById("app").innerHTML = `
 <div class="layout">
 
   <my-context alternate>
-    <h1>Alternate context (toolbar, sidenav etc'...)</h1>
+  
+    <h1>Alternate context</h1>
+    <h3>(toolbar, sidenav etc'...)</h3>
     <my-button>Hey</my-button>
     <my-button inverted>Inverted</my-button>
     
@@ -27,6 +29,7 @@ document.getElementById("app").innerHTML = `
       <h2>Action Error</h2>
       <my-button>Hey</my-button>
     </my-action>
+
   </my-context>
 
   
@@ -52,6 +55,23 @@ document.getElementById("app").innerHTML = `
       <h2>Action Error</h2>
       <my-button>Hey</my-button>
     </my-action>
+
+    <my-action type="success" alternate>
+      <h2>Action Success</h2>
+      <my-button>Hey</my-button>
+      <my-button inverted>Inverted</my-button>
+    </my-action>
+
+    <my-action type="warn" alternate>
+      <h2>Action Warn</h2>
+      <my-button>Hey</my-button>
+    </my-action>
+
+    <my-action type="error" alternate>
+      <h2>Action Error</h2>
+      <my-button>Hey</my-button>
+    </my-action>
+
   </my-context>
 
 </div>
